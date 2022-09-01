@@ -1,0 +1,12 @@
+D:\Project\test\WebApiSample\CommonLibrary\bin\Debug\net6.0\CommonLibrary.deps.json
+D:\Project\test\WebApiSample\CommonLibrary\bin\Debug\net6.0\CommonLibrary.dll
+D:\Project\test\WebApiSample\CommonLibrary\bin\Debug\net6.0\CommonLibrary.pdb
+D:\Project\test\WebApiSample\CommonLibrary\obj\Debug\net6.0\CommonLibrary.csproj.AssemblyReference.cache
+D:\Project\test\WebApiSample\CommonLibrary\obj\Debug\net6.0\CommonLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\test\WebApiSample\CommonLibrary\obj\Debug\net6.0\CommonLibrary.AssemblyInfoInputs.cache
+D:\Project\test\WebApiSample\CommonLibrary\obj\Debug\net6.0\CommonLibrary.AssemblyInfo.cs
+D:\Project\test\WebApiSample\CommonLibrary\obj\Debug\net6.0\CommonLibrary.csproj.CoreCompileInputs.cache
+D:\Project\test\WebApiSample\CommonLibrary\obj\Debug\net6.0\CommonLibrary.dll
+D:\Project\test\WebApiSample\CommonLibrary\obj\Debug\net6.0\refint\CommonLibrary.dll
+D:\Project\test\WebApiSample\CommonLibrary\obj\Debug\net6.0\CommonLibrary.pdb
+D:\Project\test\WebApiSample\CommonLibrary\obj\Debug\net6.0\ref\CommonLibrary.dll

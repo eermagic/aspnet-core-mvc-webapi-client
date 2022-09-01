@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "WebApiServer/1.0.0": {
+        "dependencies": {
+          "CommonLibrary": "1.0.0"
+        },
+        "runtime": {
+          "WebApiServer.dll": {}
+        }
+      },
+      "CommonLibrary/1.0.0": {
+        "runtime": {
+          "CommonLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "WebApiServer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CommonLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
