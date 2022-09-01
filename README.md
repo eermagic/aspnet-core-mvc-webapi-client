@@ -6,3 +6,4 @@
 
 我會以常見的會員登入做為示範，在 Web Api 接收帳密，並驗證資料庫帳密，在 Windows Form 傳送帳密資料。
 
+[完整教學文章](https://blog.hungwin.com.tw/aspnet-core-mvc-webapi-client/)
