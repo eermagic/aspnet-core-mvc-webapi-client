@@ -10,3 +10,15 @@ D:\Project\test\WebApiSample\CommonLibrary\obj\Debug\net6.0\CommonLibrary.dll
 D:\Project\test\WebApiSample\CommonLibrary\obj\Debug\net6.0\refint\CommonLibrary.dll
 D:\Project\test\WebApiSample\CommonLibrary\obj\Debug\net6.0\CommonLibrary.pdb
 D:\Project\test\WebApiSample\CommonLibrary\obj\Debug\net6.0\ref\CommonLibrary.dll
+C:\Users\Mars\Documents\GitHub\aspnet-core-mvc-webapi-client\CommonLibrary\bin\Debug\net6.0\CommonLibrary.deps.json
+C:\Users\Mars\Documents\GitHub\aspnet-core-mvc-webapi-client\CommonLibrary\bin\Debug\net6.0\CommonLibrary.dll
+C:\Users\Mars\Documents\GitHub\aspnet-core-mvc-webapi-client\CommonLibrary\bin\Debug\net6.0\CommonLibrary.pdb
+C:\Users\Mars\Documents\GitHub\aspnet-core-mvc-webapi-client\CommonLibrary\obj\Debug\net6.0\CommonLibrary.csproj.AssemblyReference.cache
+C:\Users\Mars\Documents\GitHub\aspnet-core-mvc-webapi-client\CommonLibrary\obj\Debug\net6.0\CommonLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mars\Documents\GitHub\aspnet-core-mvc-webapi-client\CommonLibrary\obj\Debug\net6.0\CommonLibrary.AssemblyInfoInputs.cache
+C:\Users\Mars\Documents\GitHub\aspnet-core-mvc-webapi-client\CommonLibrary\obj\Debug\net6.0\CommonLibrary.AssemblyInfo.cs
+C:\Users\Mars\Documents\GitHub\aspnet-core-mvc-webapi-client\CommonLibrary\obj\Debug\net6.0\CommonLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Mars\Documents\GitHub\aspnet-core-mvc-webapi-client\CommonLibrary\obj\Debug\net6.0\CommonLibrary.dll
+C:\Users\Mars\Documents\GitHub\aspnet-core-mvc-webapi-client\CommonLibrary\obj\Debug\net6.0\refint\CommonLibrary.dll
+C:\Users\Mars\Documents\GitHub\aspnet-core-mvc-webapi-client\CommonLibrary\obj\Debug\net6.0\CommonLibrary.pdb
+C:\Users\Mars\Documents\GitHub\aspnet-core-mvc-webapi-client\CommonLibrary\obj\Debug\net6.0\ref\CommonLibrary.dll

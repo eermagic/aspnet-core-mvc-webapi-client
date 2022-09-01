@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Globalization;
 using System.Security.Cryptography;
 using System.Text;
 using static CommonLibrary.ApiModel.LoginApiModel;
@@ -30,11 +31,11 @@ namespace WebApiServer.Controllers
                 // Api 密鑰
                 IConfiguration Config = new ConfigurationBuilder().AddJsonFile("appSettings.json").Build();
                 string encyptKey = Config.GetSection("EncyptKey").Value;
-                string tokenData = Decode3DES(req.Token, encyptKey);
+                string tokenData = DecryptAES256(req.Token, encyptKey);
 
                 // 檢查時間有效內
                 TimeSpan TS = new System.TimeSpan(Convert.ToDateTime(tokenData).Ticks - DateTime.Now.Ticks);
-                double timeDiff =  Convert.ToDouble(TS.TotalMinutes); //分鐘差異
+                double timeDiff = Convert.ToDouble(TS.TotalMinutes); //分鐘差異
                 if (timeDiff > 5 || timeDiff < -5)
                 {
                     resp.ErrMsg = "驗證碼已過期";
@@ -69,28 +70,31 @@ namespace WebApiServer.Controllers
         }
 
         /// <summary>
-        /// 使用 3DES 解碼
+        /// 使用 AES 256 解密
         /// </summary>
-        /// <param name="strEncryptData"></param>
-        /// <param name="strKey"></param>
+        /// <param name="encryptData">密文</param>
+        /// <param name="key">密鑰</param>
         /// <returns></returns>
-        public static string Decode3DES(string strEncryptData, string strKey)
+        public static string DecryptAES256(string encryptData, string key)
         {
-            byte[] inputArray = Convert.FromBase64String(strEncryptData);
-            var tripleDES = TripleDES.Create();
+            // 16 個英文或數字
+            string iv = "1234567890abcdef";
+
+            // 產生 MD5 32 字串編碼
             var md5Serv = MD5.Create();
-            byte[] keyArray = md5Serv.ComputeHash(Encoding.UTF8.GetBytes(strKey));
+            byte[] keyArray = md5Serv.ComputeHash(Encoding.UTF8.GetBytes(key));
+            string md5 = BitConverter.ToString(keyArray).Replace("-", "").ToUpper();
             md5Serv.Dispose();
-            byte[] allKey = new byte[24];
-            Buffer.BlockCopy(keyArray, 0, allKey, 0, 16);
-            Buffer.BlockCopy(keyArray, 0, allKey, 16, 8);
-            tripleDES.Key = allKey;
-            tripleDES.Mode = CipherMode.ECB;
-            tripleDES.Padding = PaddingMode.PKCS7;
-            ICryptoTransform cTransform = tripleDES.CreateDecryptor();
-            byte[] resultArray = cTransform.TransformFinalBlock(inputArray, 0, inputArray.Length);
-            string result = Encoding.UTF8.GetString(resultArray);
-            return result;
+
+            var encryptBytes = Convert.FromBase64String(encryptData);
+            var aes = new RijndaelManaged();
+            aes.Key = Encoding.UTF8.GetBytes(md5);
+            aes.IV = Encoding.UTF8.GetBytes(iv);
+            aes.Mode = CipherMode.CBC;
+            aes.Padding = PaddingMode.PKCS7;
+            ICryptoTransform transform = aes.CreateDecryptor();
+
+            return Encoding.UTF8.GetString(transform.TransformFinalBlock(encryptBytes, 0, encryptBytes.Length));
         }
     }
 }

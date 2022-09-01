@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fGxltC55HDWg8tM2jJoI7HgEcAbIfA141GEVRqnQIIwdY2YcluTAicX9IYXe6bKQSGhUUCRVRVxge3AM+KgOEg==",
+  "dgSpecHash": "DtQWQaSTn6VScScTMuVYf2iJUuvj1Q+uHSFPmG8xCTPtzp5X3Y3YxYS4W3DSzbkMFGF+Q2T1DfqP3ws3/V490Q==",
   "success": true,
-  "projectFilePath": "D:\\Project\\test\\WebApiSample\\WebApiServer\\WebApiServer.csproj",
+  "projectFilePath": "C:\\Users\\Mars\\Documents\\GitHub\\aspnet-core-mvc-webapi-client\\WebApiServer\\WebApiServer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\test\\WebApiSample\\WebApiServer\\WebApiServer.csproj": {}
+    "C:\\Users\\Mars\\Documents\\GitHub\\aspnet-core-mvc-webapi-client\\WebApiServer\\WebApiServer.csproj": {}
   },
   "projects": {
-    "D:\\Project\\test\\WebApiSample\\CommonLibrary\\CommonLibrary.csproj": {
+    "C:\\Users\\Mars\\Documents\\GitHub\\aspnet-core-mvc-webapi-client\\CommonLibrary\\CommonLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\test\\WebApiSample\\CommonLibrary\\CommonLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Mars\\Documents\\GitHub\\aspnet-core-mvc-webapi-client\\CommonLibrary\\CommonLibrary.csproj",
         "projectName": "CommonLibrary",
-        "projectPath": "D:\\Project\\test\\WebApiSample\\CommonLibrary\\CommonLibrary.csproj",
+        "projectPath": "C:\\Users\\Mars\\Documents\\GitHub\\aspnet-core-mvc-webapi-client\\CommonLibrary\\CommonLibrary.csproj",
         "packagesPath": "C:\\Users\\Mars\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\test\\WebApiSample\\CommonLibrary\\obj\\",
+        "outputPath": "C:\\Users\\Mars\\Documents\\GitHub\\aspnet-core-mvc-webapi-client\\CommonLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mars\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -59,14 +59,14 @@
         }
       }
     },
-    "D:\\Project\\test\\WebApiSample\\WebApiServer\\WebApiServer.csproj": {
+    "C:\\Users\\Mars\\Documents\\GitHub\\aspnet-core-mvc-webapi-client\\WebApiServer\\WebApiServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\test\\WebApiSample\\WebApiServer\\WebApiServer.csproj",
+        "projectUniqueName": "C:\\Users\\Mars\\Documents\\GitHub\\aspnet-core-mvc-webapi-client\\WebApiServer\\WebApiServer.csproj",
         "projectName": "WebApiServer",
-        "projectPath": "D:\\Project\\test\\WebApiSample\\WebApiServer\\WebApiServer.csproj",
+        "projectPath": "C:\\Users\\Mars\\Documents\\GitHub\\aspnet-core-mvc-webapi-client\\WebApiServer\\WebApiServer.csproj",
         "packagesPath": "C:\\Users\\Mars\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\test\\WebApiSample\\WebApiServer\\obj\\",
+        "outputPath": "C:\\Users\\Mars\\Documents\\GitHub\\aspnet-core-mvc-webapi-client\\WebApiServer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Mars\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -83,8 +83,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Project\\test\\WebApiSample\\CommonLibrary\\CommonLibrary.csproj": {
-                "projectPath": "D:\\Project\\test\\WebApiSample\\CommonLibrary\\CommonLibrary.csproj"
+              "C:\\Users\\Mars\\Documents\\GitHub\\aspnet-core-mvc-webapi-client\\CommonLibrary\\CommonLibrary.csproj": {
+                "projectPath": "C:\\Users\\Mars\\Documents\\GitHub\\aspnet-core-mvc-webapi-client\\CommonLibrary\\CommonLibrary.csproj"
               }
             }
           }

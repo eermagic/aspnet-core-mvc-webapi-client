@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\test\\WebApiSample\\CommonLibrary\\CommonLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\Mars\\Documents\\GitHub\\aspnet-core-mvc-webapi-client\\CommonLibrary\\CommonLibrary.csproj",
       "projectName": "CommonLibrary",
-      "projectPath": "D:\\Project\\test\\WebApiSample\\CommonLibrary\\CommonLibrary.csproj",
+      "projectPath": "C:\\Users\\Mars\\Documents\\GitHub\\aspnet-core-mvc-webapi-client\\CommonLibrary\\CommonLibrary.csproj",
       "packagesPath": "C:\\Users\\Mars\\.nuget\\packages\\",
-      "outputPath": "D:\\Project\\test\\WebApiSample\\CommonLibrary\\obj\\",
+      "outputPath": "C:\\Users\\Mars\\Documents\\GitHub\\aspnet-core-mvc-webapi-client\\CommonLibrary\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Mars\\AppData\\Roaming\\NuGet\\NuGet.Config",

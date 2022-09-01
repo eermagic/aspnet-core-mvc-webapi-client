@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Sh253Ue/q+iFm0J8gqiwlkvn85xYWxu0Y4f1UPopLQX309U7MKGgeJEMFxe5c5Y58zp0Ie+lA/0pHpxGadvo/g==",
+  "dgSpecHash": "9W8tFBEKa+hzNfYfAGvxS5nwbhoQHDMzpLRZGlTWW2bpWzU38Nqb4TR9Aeeuujjz8FNmaWd33jZz3utiIcg5qQ==",
   "success": true,
-  "projectFilePath": "D:\\Project\\test\\WebApiSample\\CommonLibrary\\CommonLibrary.csproj",
+  "projectFilePath": "C:\\Users\\Mars\\Documents\\GitHub\\aspnet-core-mvc-webapi-client\\CommonLibrary\\CommonLibrary.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

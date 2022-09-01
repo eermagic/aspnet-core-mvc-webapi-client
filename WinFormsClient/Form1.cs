@@ -37,7 +37,7 @@ namespace WinFormsClient
 
                 // Api 驗證碼
                 string nowTime = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss");
-                string token = Encode3DES(nowTime, EncyptKey);
+                string token = EncryptAES256(nowTime, EncyptKey);
                 req.Token = token;
 
                 // Api Url
@@ -93,28 +93,32 @@ namespace WinFormsClient
         }
 
         /// <summary>
-        /// 使用 3DES 編碼
+        /// 使用 AES 256 加密
         /// </summary>
-        /// <param name="strSource"></param>
-        /// <param name="strKey"></param>
+        /// <param name="source">本文</param>
+        /// <param name="key">密鑰</param>
         /// <returns></returns>
-        public static string Encode3DES(string strSource, string strKey)
+        public static string EncryptAES256(string source, string key)
         {
-            byte[] inputArray = Encoding.UTF8.GetBytes(strSource);
-            var tripleDES = TripleDES.Create();
+            // 16 個英文或數字
+            string iv = "1234567890abcdef";
+
+            // 產生 MD5 32 字串編碼
             var md5Serv = MD5.Create();
-            byte[] keyArray = md5Serv.ComputeHash(Encoding.UTF8.GetBytes(strKey));
+            byte[] keyArray = md5Serv.ComputeHash(Encoding.UTF8.GetBytes(key));
+            string md5 = BitConverter.ToString(keyArray).Replace("-", "").ToUpper();
             md5Serv.Dispose();
-            byte[] allKey = new byte[24];
-            Buffer.BlockCopy(keyArray, 0, allKey, 0, 16);
-            Buffer.BlockCopy(keyArray, 0, allKey, 16, 8);
-            tripleDES.Key = allKey;
-            tripleDES.Mode = CipherMode.ECB;
-            tripleDES.Padding = PaddingMode.PKCS7;
-            ICryptoTransform cTransform = tripleDES.CreateEncryptor();
-            byte[] resultArray = cTransform.TransformFinalBlock(inputArray, 0, inputArray.Length);
-            string result = Convert.ToBase64String(resultArray, 0, resultArray.Length);
-            return result;
+
+            byte[] sourceBytes = Encoding.UTF8.GetBytes(source);
+            var aes = new RijndaelManaged();
+            aes.Key = Encoding.UTF8.GetBytes(md5);
+            aes.IV = Encoding.UTF8.GetBytes(iv);
+            aes.Mode = CipherMode.CBC;
+            aes.Padding = PaddingMode.PKCS7;
+
+            ICryptoTransform transform = aes.CreateEncryptor();
+
+            return Convert.ToBase64String(transform.TransformFinalBlock(sourceBytes, 0, sourceBytes.Length));
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Y6/AHmElGochBddDkb5s70GLAuW5vRZfKAKfZeZD6szothLmWiBM0DH91fnwI56TciitoDbqARmgkLfy+38x+Q==",
+  "dgSpecHash": "X6yi7flIYxhhxH4OjddUYKiIgCOw6hbWFq1YDTfFua7/jsugOJ3+zkG2oBgc542S9QkDxwm3O4TQeULLAmE3Ng==",
   "success": true,
-  "projectFilePath": "D:\\Project\\test\\WebApiSample\\WinFormsClient\\WinFormsClient.csproj",
+  "projectFilePath": "C:\\Users\\Mars\\Documents\\GitHub\\aspnet-core-mvc-webapi-client\\WinFormsClient\\WinFormsClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mars\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],

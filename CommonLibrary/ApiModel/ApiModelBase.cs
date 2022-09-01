@@ -16,6 +16,6 @@ namespace CommonLibrary.ApiModel
         /// <summary>
         /// 錯誤訊息
         /// </summary>
-        public string? ErrMsg { get; set; }
+        public string ErrMsg { get; set; } = "";
     }
 }
